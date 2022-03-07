@@ -13,13 +13,16 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.mhis.MainActivity;
 import com.example.mhis.R;
 import com.example.mhis.ui.doctors.Doctor;
+import com.example.mhis.ui.doctors.DoctorFragment;
+import com.google.android.material.textfield.TextInputEditText;
 import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 public class Login extends AppCompatActivity
 {
-    EditText editTextUsername,editTextPassword;
+    TextInputEditText textInputEditTextUsername,textInputEditTextPassword;
     Button loginButton;
     ProgressBar progressBar;
 
@@ -29,17 +32,17 @@ public class Login extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_login);
 
-        editTextUsername = findViewById(R.id.editTextTextUsername);
-        editTextPassword = findViewById(R.id.editTextTextPassword);
+        textInputEditTextUsername = findViewById(R.id.usernameLogin);
+        textInputEditTextPassword = findViewById(R.id.passwordLogin);
         loginButton = findViewById(R.id.loginBtn);
-        progressBar = findViewById(R.id.progressBar);
+        progressBar = findViewById(R.id.progressbar);
 
         loginButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 String username, password;
-                username = String.valueOf(editTextUsername.getText());
-                password = String.valueOf(editTextPassword.getText());
+                username = String.valueOf(textInputEditTextUsername.getText());
+                password = String.valueOf(textInputEditTextPassword.getText());
 
                 if(!username.equals("") && !password.equals("")) {
                     progressBar.setVisibility(View.VISIBLE);
@@ -63,8 +66,8 @@ public class Login extends AppCompatActivity
                                     String result = putData.getResult();
                                     if(result.equals("Login Success")){
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
-                                        Intent intent = new Intent(getApplicationContext(), Doctor.class);
-                                        intent.putExtra("Username", username);
+                                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                        intent.putExtra("username", username);
                                         startActivity(intent);
                                         finish();
                                     }else{
