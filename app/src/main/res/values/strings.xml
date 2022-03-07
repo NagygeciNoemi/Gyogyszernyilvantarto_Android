@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MHIS</string>
+    <string name="mhis">MHIS - Medicine Hospital Information System</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="login">Bejelentkezés</string>
+    <string name="userDatas">Személyes adatok</string>
+    <string name="medicine">Gyógyszer rendező</string>
+    <string name="doctorSearch">Orvosok keresése</string>
+    <string name="settings">Beállítások</string>
+    <string name="exit">Kilépés</string>
+
+    <string name="username">user11</string>
+    <string name="user">Felhasználónév</string>
+    <string name="password">Jelszó</string>
+    <string name="pass">jelszo11</string>
+    <string name="name">Teljes név</string>
+    <string name="email">Email cím</string>
+    <string name="address">Lakcím</string>
+    <string name="taj">TAJ szám</string>
+    <string name="Bplace">Születési hely</string>
+    <string name="Bdate">Születési idő</string>
+    <string name="allergies">Allergiák</string>
+    <string name="specialization">Szakterület</string>
+    <string name="region">Megye</string>
+    <string name="city">Város</string>
+</resources>

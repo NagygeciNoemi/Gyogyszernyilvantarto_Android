@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_login">
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.mhis.ui.login.LoginFragment"
+        android:label="@string/login"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/nav_userDatas"
+        android:name="com.example.mhis.ui.userDatas.UserDatasFragment"
+        android:label="@string/userDatas"
+        tools:layout="@layout/fragment_userdatas" />
+
+    <fragment
+        android:id="@+id/nav_medicine"
+        android:name="com.example.mhis.ui.medicine.MedicineFragment"
+        android:label="@string/medicine"
+        tools:layout="@layout/fragment_medicine" />
+
+    <fragment
+        android:id="@+id/nav_doctors"
+        android:name="com.example.mhis.ui.doctors.DoctorFragment"
+        android:label="@string/doctorSearch"
+        tools:layout="@layout/fragment_doctors" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.mhis.ui.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

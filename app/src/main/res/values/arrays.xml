@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="mhis_open">
+        <item>MHIS</item>
+        <item>Medicine Hospital Information System</item>
+    </string-array>
+    
+</resources>
