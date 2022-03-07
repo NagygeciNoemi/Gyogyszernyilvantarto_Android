@@ -53,7 +53,7 @@ public class Login extends AppCompatActivity
                             //Starting Write and Read data with URL
                             //Creating array for parameters
                             String[] field = new String[2];
-                            field[0] = "username";
+                            field[0] = "usernameg";
                             field[1] = "p_password";
                             //Creating array for data
                             String[] data = new String[2];
