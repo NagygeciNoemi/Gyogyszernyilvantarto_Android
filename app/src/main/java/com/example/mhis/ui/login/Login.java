@@ -7,7 +7,6 @@ import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -15,8 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mhis.MainActivity;
 import com.example.mhis.R;
-import com.example.mhis.ui.doctors.Doctor;
-import com.example.mhis.ui.doctors.DoctorFragment;
 import com.google.android.material.textfield.TextInputEditText;
 import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
