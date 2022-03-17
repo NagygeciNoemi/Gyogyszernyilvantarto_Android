@@ -1,4 +1,4 @@
-/*package com.example.mhis.ui.login;
+package com.example.mhis;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,13 +12,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mhis.MainActivity;
-import com.example.mhis.MenuActivity;
-import com.example.mhis.R;
 import com.google.android.material.textfield.TextInputEditText;
 import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
-public class Login extends AppCompatActivity
+public class LoginActivity extends AppCompatActivity
 {
     TextInputEditText textInputEditTextUsername,textInputEditTextPassword;
     Button loginButton;
@@ -51,8 +48,8 @@ public class Login extends AppCompatActivity
                             //Starting Write and Read data with URL
                             //Creating array for parameters
                             String[] field = new String[2];
-                            field[0] = "usernameg";
-                            field[1] = "p_password";
+                            field[0] = "username";
+                            field[1] = "password";
                             //Creating array for data
                             String[] data = new String[2];
                             data[0] = username;
@@ -86,4 +83,3 @@ public class Login extends AppCompatActivity
 
     }
 }
-*/

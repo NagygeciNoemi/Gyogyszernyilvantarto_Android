@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.mhis">
 
     <application
@@ -9,7 +10,11 @@
         android:roundIcon="@mipmap/logoatlatszo"
         android:supportsRtl="true"
         android:theme="@style/Theme.MHIS.NoActionBar"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
         <activity
             android:name=".MenuActivity"
             android:exported="false"

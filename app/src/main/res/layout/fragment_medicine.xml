@@ -6,15 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <CalendarView
+    <com.applandeo.materialcalendarview.CalendarView
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:foregroundGravity="center_vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="match_parent"
+        app:headerColor="@color/white"
+        app:selectionColor="@color/darkgreen"
+        app:todayLabelColor="@color/darkgreen"
+        app:anotherMonthsDaysLabelsColor="@color/lightgreen"
+        android:layout_marginTop="20dp"
+        app:headerLabelColor="@color/darkgreen"
+        app:previousButtonSrc="@drawable/ic_back"
+        app:forwardButtonSrc="@drawable/ic_forward"
         />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
