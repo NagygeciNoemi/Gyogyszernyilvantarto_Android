@@ -23,7 +23,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:ignore="UselessParent"
-                android:background="@drawable/border">
+                android:background="@drawable/border"
+                android:layout_marginTop="100dp">
 
                 <TableRow
                     android:layout_width="match_parent"
@@ -44,6 +45,8 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.08" />
+
+
                 </TableRow>
 
 
@@ -200,5 +203,13 @@
             </TableLayout>
         </LinearLayout>
 
+
     </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylcerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="745dp"
+        tools:layout_editor_absoluteY="-51dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

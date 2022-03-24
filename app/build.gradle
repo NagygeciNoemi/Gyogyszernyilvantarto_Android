@@ -31,6 +31,11 @@ android {
 }
 
 dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.firebase:protolite-well-known-types:18.0.0'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
 
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
@@ -43,6 +48,18 @@ dependencies {
     implementation 'com.github.VishnuSivadasVS:Advanced-HttpURLConnection:1.2'
     implementation 'com.google.android.material:material:1.6.0-alpha03'
     implementation 'com.applandeo:material-calendar-view:1.7.0'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    testImplementation 'junit:junit:4.13.2'
+
+    //add these for lines
+    implementation 'com.android.volley:volley:1.2.1'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    implementation 'com.github.bumptech.glide:glide:4.2.0'
 
     testImplementation 'junit:junit:'
     testImplementation 'org.junit.jupiter:junit-jupiter'
