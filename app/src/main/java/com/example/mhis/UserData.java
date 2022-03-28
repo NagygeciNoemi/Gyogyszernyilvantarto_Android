@@ -2,7 +2,7 @@ package com.example.mhis;
 
 import java.util.Date;
 
-public class Data
+public class UserData
 {
     private int taj;
     private String username;
@@ -14,7 +14,7 @@ public class Data
     private String allergy;
     private String p_email;
 
-    public Data(int taj, String username, String p_name, String p_address, String p_birthday, String p_birthplace, String p_password, String allergy, String p_email) {
+    public UserData(int taj, String username, String p_name, String p_address, String p_birthday, String p_birthplace, String p_password, String allergy, String p_email) {
         this.taj = taj;
         this.username = username;
         this.p_name = p_name;

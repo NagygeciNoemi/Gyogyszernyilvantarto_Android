@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mhis.Data;
+import com.example.mhis.UserData;
 import com.example.mhis.R;
 
 import java.util.List;
@@ -16,12 +16,12 @@ import java.util.List;
 public class DatasAdapter extends RecyclerView.Adapter<DatasAdapter.DatasViewHolder>
 {
     private Context mCtx;
-    private List<Data> dataList;
+    private List<UserData> userDataList;
 
-    public DatasAdapter(Context mCtx, List<Data> dataList)
+    public DatasAdapter(Context mCtx, List<UserData> userDataList)
     {
         this.mCtx = mCtx;
-        this.dataList = dataList;
+        this.userDataList = userDataList;
     }
 
     @Override
@@ -35,7 +35,7 @@ public class DatasAdapter extends RecyclerView.Adapter<DatasAdapter.DatasViewHol
     @Override
     public void onBindViewHolder(DatasViewHolder holder, int position)
     {
-        Data product = dataList.get(position);
+        UserData product = userDataList.get(position);
 
         holder.textViewTaj.setText(product.getTaj());
         holder.textViewUsername.setText(product.getUsername());
@@ -51,7 +51,7 @@ public class DatasAdapter extends RecyclerView.Adapter<DatasAdapter.DatasViewHol
 
     @Override
     public int getItemCount() {
-        return dataList.size();
+        return userDataList.size();
     }
 
     class DatasViewHolder extends RecyclerView.ViewHolder {

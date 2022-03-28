@@ -11,7 +11,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.mhis.Data;
+import com.example.mhis.UserData;
 import com.example.mhis.R;
 
 import org.json.JSONArray;
@@ -26,7 +26,7 @@ public class UserDatas extends AppCompatActivity
     private static final String URL_DATAS = "http://192.168.194.77/mhis/Api.php";
 
     //a list to store all the products
-    List<Data> dataList;
+    List<UserData> userDataList;
 
     //the recyclerview
     RecyclerView recyclerView;
@@ -43,7 +43,7 @@ public class UserDatas extends AppCompatActivity
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         //initializing the productlist
-        dataList = new ArrayList<>();
+        userDataList = new ArrayList<>();
 
         //this method will fetch and parse json
         //to display it in recyclerview
@@ -74,7 +74,7 @@ public class UserDatas extends AppCompatActivity
                                 JSONObject data = array.getJSONObject(i);
 
                                 //adding the product to product list
-                                dataList.add(new Data(
+                                userDataList.add(new UserData(
                                         data.getInt("taj"),
                                         data.getString("username"),
                                         data.getString("p_name"),
@@ -88,7 +88,7 @@ public class UserDatas extends AppCompatActivity
                             }
 
                             //creating adapter object and setting it to recyclerview
-                            DatasAdapter adapter = new DatasAdapter(UserDatas.this, dataList);
+                            DatasAdapter adapter = new DatasAdapter(UserDatas.this, userDataList);
                             recyclerView.setAdapter(adapter);
                         } catch (JSONException e) {
                             e.printStackTrace();

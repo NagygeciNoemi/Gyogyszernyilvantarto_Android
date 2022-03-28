@@ -11,9 +11,9 @@
         android:label="@string/login"
         tools:layout="@layout/fragment_login" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_userDatas"
-        android:name="com.example.mhis.ui.userDatas.UserDatasFragment"
+        android:name="com.example.mhis.UserDataActivity"
         android:label="@string/userDatas"
         tools:layout="@layout/fragment_userdatas" />
 
