@@ -35,11 +35,11 @@ public class LoginActivity extends AppCompatActivity
         loginButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                String username, password;
+                String username, p_password;
                 username = String.valueOf(textInputEditTextUsername.getText());
-                password = String.valueOf(textInputEditTextPassword.getText());
+                p_password = String.valueOf(textInputEditTextPassword.getText());
 
-                if(!username.equals("") && !password.equals("")) {
+                if(!username.equals("") && !p_password.equals("")) {
                     progressBar.setVisibility(View.VISIBLE);
                     Handler handler = new Handler(Looper.getMainLooper());
                     handler.post(new Runnable() {
@@ -49,12 +49,12 @@ public class LoginActivity extends AppCompatActivity
                             //Creating array for parameters
                             String[] field = new String[2];
                             field[0] = "username";
-                            field[1] = "password";
+                            field[1] = "p_password";
                             //Creating array for data
                             String[] data = new String[2];
                             data[0] = username;
-                            data[1] = password;
-                            PutData putData = new PutData("http://192.168.194.77/mhis/login.php", "POST", field, data);
+                            data[1] = p_password;
+                            PutData putData = new PutData("http://192.168.56.1/mhis/login.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     progressBar.setVisibility(View.GONE);

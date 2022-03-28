@@ -10,21 +10,13 @@
         android:layout_height="wrap_content"
         android:padding="8dp">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="120dp"
-            android:layout_height="90dp"
-            android:padding="4dp" />
-
         <TextView
             android:id="@+id/textViewTaj"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@id/imageView"
-            android:text="Apple MacBook Air Core i5 5th Gen - (8 GB/128 GB SSD/Mac OS Sierra)"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-            android:textColor="#000000" />
+            android:text="1"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
         <TextView
             android:id="@+id/textViewUsername"
@@ -33,9 +25,8 @@
             android:layout_below="@id/textViewTaj"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/imageView"
-            android:text="13.3 Inch, 256 GB"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+            android:text="2"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
         <TextView
             android:id="@+id/textViewPname"
@@ -44,13 +35,8 @@
             android:layout_below="@id/textViewUsername"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/imageView"
-            android:background="@color/darkgreen"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:text="4.7"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
-            android:textStyle="bold" />
+            android:text="3"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
         <TextView
             android:id="@+id/textViewPaddress"
@@ -59,10 +45,8 @@
             android:layout_below="@id/textViewPname"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/imageView"
-            android:text="INR 56990"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textStyle="bold" />
+            android:text="4"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
         <TextView
             android:id="@+id/textViewPbirthday"
@@ -71,10 +55,8 @@
             android:layout_below="@id/textViewPaddress"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/imageView"
-            android:text="INR 56990"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textStyle="bold" />
+            android:text="5"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
         <TextView
             android:id="@+id/textViewAllergy"
@@ -83,10 +65,8 @@
             android:layout_below="@id/textViewPbirthday"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/imageView"
-            android:text="INR 56990"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textStyle="bold" />
+            android:text="6"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
         <TextView
             android:id="@+id/textViewPPassword"
@@ -95,10 +75,8 @@
             android:layout_below="@id/textViewAllergy"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/imageView"
-            android:text="INR 56990"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textStyle="bold" />
+            android:text="6"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
         <TextView
             android:id="@+id/textViewPEmail"
@@ -107,11 +85,8 @@
             android:layout_below="@id/textViewPPassword"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/imageView"
-            android:text="INR 56990"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textStyle="bold" />
-
+            android:text="7"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
 
     </RelativeLayout>
