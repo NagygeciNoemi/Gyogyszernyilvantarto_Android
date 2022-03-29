@@ -1,7 +1,5 @@
 package com.example.mhis;
 
-import java.util.Date;
-
 public class UserData
 {
     private int taj;

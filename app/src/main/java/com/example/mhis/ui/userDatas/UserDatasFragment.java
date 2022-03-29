@@ -20,8 +20,6 @@ public class UserDatasFragment extends Fragment
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         UserDatasViewModel userDatasViewModel = new ViewModelProvider(this).get(UserDatasViewModel.class);
-        UserDatas userDatas = new UserDatas();
-        RecyclerView recyclerView;
 
 
 

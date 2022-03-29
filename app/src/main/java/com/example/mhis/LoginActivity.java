@@ -45,16 +45,13 @@ public class LoginActivity extends AppCompatActivity
                     handler.post(new Runnable() {
                         @Override
                         public void run() {
-                            //Starting Write and Read data with URL
-                            //Creating array for parameters
                             String[] field = new String[2];
                             field[0] = "username";
                             field[1] = "p_password";
-                            //Creating array for data
                             String[] data = new String[2];
                             data[0] = username;
                             data[1] = p_password;
-                            PutData putData = new PutData("http://192.168.56.1/mhis/login.php", "POST", field, data);
+                            PutData putData = new PutData("http://10.0.11.119/mhis/login.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     progressBar.setVisibility(View.GONE);
@@ -71,7 +68,6 @@ public class LoginActivity extends AppCompatActivity
                                     Log.i("PutData", result);
                                 }
                             }
-                            //End Write and Read data with URL
                         }
                     });
                 }

@@ -49,13 +49,24 @@
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
         <TextView
-            android:id="@+id/textViewPbirthday"
+            android:id="@+id/textViewPbirthplace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textViewPaddress"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
             android:text="5"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+
+        <TextView
+            android:id="@+id/textViewPbirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewPbirthplace"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="6"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
         <TextView
@@ -65,7 +76,7 @@
             android:layout_below="@id/textViewPbirthday"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:text="6"
+            android:text="7"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
         <TextView
@@ -75,7 +86,7 @@
             android:layout_below="@id/textViewAllergy"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:text="6"
+            android:text="8"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
         <TextView
@@ -85,7 +96,7 @@
             android:layout_below="@id/textViewPPassword"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:text="7"
+            android:text="9"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
 

@@ -18,6 +18,9 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
+            android:name=".UserDataActivity"
+            android:exported="false" />
+        <activity
             android:name=".MenuActivity"
             android:exported="false"
             android:theme="@style/Theme.MHIS.NoActionBar" />
