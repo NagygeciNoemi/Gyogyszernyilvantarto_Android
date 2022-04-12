@@ -1,16 +1,18 @@
 package com.example.mhis.ui.doctors;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.mhis.R;
 import com.example.mhis.databinding.FragmentDoctorsBinding;
-import com.example.mhis.databinding.FragmentLoginBinding;
 
 public class DoctorFragment extends Fragment{
 
@@ -21,13 +23,12 @@ public class DoctorFragment extends Fragment{
         DoctorViewModel loginViewModel =
                 new ViewModelProvider(this).get(DoctorViewModel.class);
 
-        binding = FragmentDoctorsBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
-
+        View root = inflater.inflate(R.layout.fragment_doctors, container, false);
+        @SuppressLint("ResourceType") ListView listView = (ListView) root.findViewById(R.layout.datas_list);
         /*final TextView textView = binding.editTextTextUsername;
         loginViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);*/
 
-        return root;
+        return listView;
     }
 
     @Override

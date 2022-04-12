@@ -6,14 +6,8 @@
     app:startDestination="@+id/nav_medicine">
 
     <fragment
-        android:id="@+id/nav_login"
-        android:name="com.example.mhis.ui.login.LoginFragment"
-        android:label="@string/login"
-        tools:layout="@layout/fragment_login" />
-
-    <activity
         android:id="@+id/nav_userDatas"
-        android:name="com.example.mhis.DoctorActivity"
+        android:name="com.example.mhis.ui.userDatas.UserDatasFragment"
         android:label="@string/userDatas"
         tools:layout="@layout/fragment_userdatas" />
 

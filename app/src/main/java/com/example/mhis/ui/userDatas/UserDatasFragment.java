@@ -21,8 +21,6 @@ public class UserDatasFragment extends Fragment
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         UserDatasViewModel userDatasViewModel = new ViewModelProvider(this).get(UserDatasViewModel.class);
 
-
-
         binding = FragmentUserdatasBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
