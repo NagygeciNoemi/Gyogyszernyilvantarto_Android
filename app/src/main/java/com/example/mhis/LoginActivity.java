@@ -58,9 +58,10 @@ public class LoginActivity extends AppCompatActivity
                                     String result = putData.getResult();
                                     if(result.equals("Login Success")){
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
-                                        Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
-                                        intent.putExtra("username", username);
-                                        startActivity(intent);
+                                        Intent intentLogin = new Intent(getApplicationContext(), MenuActivity.class);
+                                        Intent intentUserData = new Intent(getApplicationContext(), DoctorActivity.class);
+                                        intentUserData.putExtra("username", username);
+                                        startActivity(intentLogin);
                                         finish();
                                     }else{
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();

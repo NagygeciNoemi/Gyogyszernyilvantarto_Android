@@ -13,7 +13,7 @@
 
     <activity
         android:id="@+id/nav_userDatas"
-        android:name="com.example.mhis.UserDataActivity"
+        android:name="com.example.mhis.DoctorActivity"
         android:label="@string/userDatas"
         tools:layout="@layout/fragment_userdatas" />
 
