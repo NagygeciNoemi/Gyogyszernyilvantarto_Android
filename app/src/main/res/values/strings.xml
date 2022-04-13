@@ -25,4 +25,5 @@
     <string name="specialization">Szakterület</string>
     <string name="region">Megye</string>
     <string name="city">Város</string>
+    <string name="diary">Naptár</string>
 </resources>

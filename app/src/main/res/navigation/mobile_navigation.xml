@@ -3,18 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_medicine">
+    app:startDestination="@+id/nav_diary">
 
     <fragment
-        android:id="@+id/nav_userDatas"
-        android:name="com.example.mhis.ui.userDatas.UserDatasFragment"
-        android:label="@string/userDatas"
-        tools:layout="@layout/fragment_userdatas" />
-
-    <fragment
-        android:id="@+id/nav_medicine"
+        android:id="@+id/nav_diary"
         android:name="com.example.mhis.ui.medicine.MedicineFragment"
-        android:label="@string/medicine"
+        android:label="@string/diary"
         tools:layout="@layout/fragment_medicine" />
 
     <fragment

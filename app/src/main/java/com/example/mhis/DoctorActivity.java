@@ -3,10 +3,21 @@ package com.example.mhis;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
+
+import com.example.mhis.databinding.ActivityMenuBinding;
+import com.example.mhis.databinding.FragmentDoctorsBinding;
+import com.example.mhis.databinding.FragmentMedicineBinding;
+import com.example.mhis.ui.medicine.MedicineViewModel;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -20,20 +31,21 @@ import java.util.Arrays;
 import java.util.List;
 
 public class DoctorActivity extends AppCompatActivity {
-    ListView listView;
-    String username;
+    ListView listView, listViewName, listViewEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_userdatas);
+        setContentView(R.layout.fragment_doctors);
 
-        Intent intent = getIntent();
-        username = intent.getExtras().getString("Username");
 
+        listViewName = (ListView) findViewById(R.id.listViewName);
         listView = (ListView) findViewById(R.id.listView);
-        getJSON("http://10.0.11.119/mhis/Api.php");
+        listViewEmail = (ListView) findViewById(R.id.listViewEmail);
+
+        getJSON("http://192.168.43.147/mhis/Api.php");
     }
+
 
     private void getJSON(final String urlWebService) {
         class GetJSON extends AsyncTask<Void, Void, String> {
@@ -78,15 +90,26 @@ public class DoctorActivity extends AppCompatActivity {
 
     private void loadIntoListView(String json) throws JSONException {
         JSONArray jsonArray = new JSONArray(json);
-        String[] heroes = new String[jsonArray.length()];
+
+        String[] offices = new String[jsonArray.length()];
+        String[] names = new String[jsonArray.length()];
+        String[] emails = new String[jsonArray.length()];
+
         for (int i = 0; i < jsonArray.length(); i++) {
             JSONObject obj = jsonArray.getJSONObject(i);
-            heroes[i] = obj.getString("office");
+
+            offices[i] = obj.getString("office");
+            names[i] = obj.getString("d_name");
+            emails[i] = obj.getString("d_email");
         }
 
-        List<String> list = Arrays.asList(heroes);
-        DoctorAdapter adapter = new DoctorAdapter(DoctorActivity.this, list);
-        listView.setAdapter(adapter);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, offices);
+        ArrayAdapter<String> arrayAdapterName = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, names);
+        ArrayAdapter<String> arrayAdapterEmail = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, emails);
+
+        listView.setAdapter(arrayAdapter);
+        listViewName.setAdapter(arrayAdapterName);
+        listViewEmail.setAdapter(arrayAdapterEmail);
     }
 }
 
