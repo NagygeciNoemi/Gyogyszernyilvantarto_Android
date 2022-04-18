@@ -1,4 +1,4 @@
-package com.example.mhis.ui.settings;
+package com.example.mhis.ui.contact;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,18 +9,18 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.mhis.databinding.FragmentSettingsBinding;
+import com.example.mhis.databinding.FragmentContactBinding;
 
-public class SettingsFragment extends Fragment{
+public class ContactFragment extends Fragment{
 
-    private FragmentSettingsBinding binding;
+    private FragmentContactBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        SettingsViewModel settingsViewModel =
-                new ViewModelProvider(this).get(SettingsViewModel.class);
+        ContactViewModel settingsViewModel =
+                new ViewModelProvider(this).get(ContactViewModel.class);
 
-        binding = FragmentSettingsBinding.inflate(inflater, container, false);
+        binding = FragmentContactBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         /*final TextView textView = binding.editTextTextUsername;

@@ -1,17 +1,15 @@
-package com.example.mhis.ui.settings;
-
-import android.media.metrics.Event;
+package com.example.mhis.ui.contact;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SettingsViewModel extends ViewModel
+public class ContactViewModel extends ViewModel
 {
 
     private final MutableLiveData<String> mText;
 
-    public SettingsViewModel() {
+    public ContactViewModel() {
         mText = new MutableLiveData<>();
     }
 

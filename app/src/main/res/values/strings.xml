@@ -11,19 +11,18 @@
     <string name="settings">Beállítások</string>
     <string name="exit">Kilépés</string>
 
-    <string name="username">user11</string>
     <string name="user">Felhasználónév</string>
     <string name="password">Jelszó</string>
-    <string name="pass">jelszo11</string>
-    <string name="name">Teljes név</string>
-    <string name="email">Email cím</string>
-    <string name="address">Lakcím</string>
-    <string name="taj">TAJ szám</string>
-    <string name="Bplace">Születési hely</string>
-    <string name="Bdate">Születési idő</string>
-    <string name="allergies">Allergiák</string>
-    <string name="specialization">Szakterület</string>
-    <string name="region">Megye</string>
-    <string name="city">Város</string>
     <string name="diary">Naptár</string>
+    <string name="contact">Kapcsolat</string>
+    <string name="phone">Telefonszám:</string>
+    <string name="phoneNumber">+36 00 00 00 000</string>
+    <string name="mhisEmail">mh.is@mhis.hu</string>
+    <string name="address">Cím:</string>
+    <string name="mhisAddress">0000 Budapest, Példa utca 1</string>
+    <string name="email">Email cím:</string>
+    <string name="about">Rólunk</string>
+    <string name="aboutUs">Az MHIS csapatának célja, hogy a felhasználók minél hamarabb feltudják venni a kapcsolatot orvosaikkal.</string>
+    <string name="web">Kérjük vegye igénybe online szolgátatásainkat is! Látogasson el a www.mhis.hu oldalra leleteinek megtekintéséhez!</string>
+
 </resources>
